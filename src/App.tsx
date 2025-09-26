@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { fetchPortfolios, setAuthToken, Portfolio } from './api'
 import PortfolioTable from './components/PortfolioTable'
-import { marked } from 'marked'
+import marked from "marked";
 
 const seed: any = [
   {
@@ -22,7 +22,7 @@ export default function App() {
   const [status, setStatus] = useState('idle')
 
   useEffect(() => {
-    const t = prompt('Enter token (stored insecurely):') || ''
+    const t = prompt('Enter token:') || ''
     setAuthToken(t)
   }, [])
 

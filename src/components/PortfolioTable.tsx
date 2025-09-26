@@ -73,7 +73,7 @@ export default function PortfolioTable({ portfolios }: { portfolios: Portfolio[]
       <div className="flex gap-2 mb-2 items-center">
         <input
           className="border p-1"
-          placeholder="type to filter but no aria-label"
+          placeholder="type to filter"
           value={filter}
           onChange={e => setFilter(e.target.value)}
         />
